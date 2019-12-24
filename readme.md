@@ -1,42 +1,57 @@
-# unicorn-fun [![Build Status](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun.svg?branch=master)](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun)
+# mui-use-responsive
 
-> My awesome module
+> A react hook to make your react app responsive based on Material UI
 
 
 ## Install
 
 ```
-$ npm install unicorn-fun
+$ npm install mui-use-responsive
 ```
 
 
 ## Usage
 
 ```js
-const unicornFun = require('unicorn-fun');
+import useResponsive, { responsive } from 'mui-use-responsive'
 
-unicornFun('unicorns');
-//=> 'unicorns & rainbows'
+const useStyles = makeStyles(theme => ({
+  root: {
+    fontSize: responsive(24),
+  },
+}))
+
+const ResponsiveHeading = ({ className, ...props }) => {
+  const scale = useResponsive(1920, [600, 960, 1280, 1600, 1920])
+  const classes = useStyles({scale: scale})
+
+  return <Typography className={clsx(className, classes.root)} { ...props } />
+}
 ```
 
 
 ## API
 
-### unicornFun(input, options?)
+### default function ( mainWidth = 1920, breakpoints = [600, 960, 1280, 1600, 1920] )
 
-#### input
+#### mainWidth
 
-Type: `string`
+Type: `integer`
 
-Lorem ipsum.
+The main full width value in pixel which is used in design.
 
 #### options
 
-Type: `object`
+Type: `array of integers`
 
-##### postfix
+Breakpoint values in pixel.
 
-Type: `string`\
-Default: `rainbows`
+### responsive( value1, ..., unit='px' )
 
-Lorem ipsum.
+#### value
+
+Type: `integer`
+
+#### unit
+
+Type: `string`
