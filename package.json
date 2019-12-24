@@ -1,13 +1,13 @@
 {
-	"name": "unicorn-fun",
+	"name": "mui-use-responsive",
 	"version": "0.0.0",
-	"description": "My awesome module",
+	"description": "A react hook to make your react app responsive based on Material UI",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun",
+	"repository": "https://github.com/Solwinds/mui-use-responsive",
 	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
+		"name": "Boyuan Xu",
+		"email": "boyuanxu9@gmail.com",
+		"url": "https://github.com/Solwinds/mui-use-responsive"
 	},
 	"engines": {
 		"node": ">=8"
@@ -19,10 +19,14 @@
 		"index.js"
 	],
 	"keywords": [
-		"unicorn",
-		"fun"
+		"react",
+		"react-hook",
+		"responsive",
+		"material-ui"
 	],
-	"dependencies": {},
+	"dependencies": {
+		"@material-ui/core": "^4.8.0"
+	},
 	"devDependencies": {
 		"ava": "^2.1.0",
 		"xo": "^0.24.0"
