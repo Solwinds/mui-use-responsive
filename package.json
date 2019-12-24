@@ -1,13 +1,13 @@
 {
-	"name": "mui-use-responsive",
+	"name": "react-use-responsive",
 	"version": "0.1.1",
-	"description": "A react hook to make your react app responsive based on Material UI",
+	"description": "A react hook to make your react app responsive",
 	"license": "MIT",
-	"repository": "https://github.com/Solwinds/mui-use-responsive",
+	"repository": "https://github.com/Solwinds/react-use-responsive",
 	"author": {
 		"name": "Boyuan Xu",
 		"email": "boyuanxu9@gmail.com",
-		"url": "https://github.com/Solwinds/mui-use-responsive"
+		"url": "https://github.com/Solwinds/react-use-responsive"
 	},
 	"engines": {
 		"node": ">=8"

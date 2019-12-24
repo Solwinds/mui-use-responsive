@@ -1,19 +1,19 @@
-# mui-use-responsive
+# react-use-responsive
 
-> A react hook to make your react app responsive based on Material UI
+> A react hook to make your react app responsive
 
 
 ## Install
 
 ```
-$ npm install mui-use-responsive
+$ npm install react-use-responsive
 ```
 
 
 ## Usage
 
 ```js
-import useResponsive, { responsive } from 'mui-use-responsive'
+import useResponsive, { responsive } from 'react-use-responsive'
 
 const useStyles = makeStyles(theme => ({
   root: {
