@@ -1,12 +1,13 @@
 'use strict';
-import { useMediaQuery } from '@material-ui/core'
+
+import { useMediaQuery } from 'react-responsive'
 
 export default function useResponsive(designWidth = 1920, breakpoints = [600, 960, 1280, 1600, 1920,]) {
   //const theme = useTheme()
 
   const breakpoint = breakpoints.slice().reverse().reduce((output, width) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const matches = useMediaQuery(`(min-width: ${width+1}px)`)
+    const matches = useMediaQuery({query: `(min-width: ${width+1}px)`})
     return !output && matches ? width : output
   }, 0) || breakpoints[0]
 

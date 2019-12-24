@@ -1,6 +1,6 @@
 {
 	"name": "mui-use-responsive",
-	"version": "0.0.0",
+	"version": "0.1.1",
 	"description": "A react hook to make your react app responsive based on Material UI",
 	"license": "MIT",
 	"repository": "https://github.com/Solwinds/mui-use-responsive",
@@ -25,7 +25,8 @@
 		"material-ui"
 	],
 	"dependencies": {
-		"@material-ui/core": "^4.8.0"
+		"@material-ui/core": "^4.8.0",
+		"react-responsive": "^8.0.1"
 	},
 	"devDependencies": {
 		"ava": "^2.1.0",
