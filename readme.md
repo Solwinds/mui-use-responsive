@@ -1,4 +1,4 @@
-# react-use-responsive
+# mui-use-responsive
 
 > A react hook to make your react app responsive
 
